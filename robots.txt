@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /program/admin-
+Disallow: /program/design-studio.php
+Disallow: /program/login.php
+Disallow: /program/logout.php
+Disallow: /program/telegram.php
+Disallow: /program/bale.php
+Disallow: /program/eitaa.php
+Disallow: /program/auth
+Disallow: /program/messenger-
+Disallow: /admin/
+Allow: /
+
+Sitemap: https://melkino.infinityfree.me/sitemap.xml
