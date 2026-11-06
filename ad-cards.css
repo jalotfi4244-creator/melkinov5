@@ -1,0 +1,728 @@
+/* ad-cards.css — استایل مشترک کارت خانه / VIP / همه آگهی‌ها */
+
+.mk-decor-badge {
+    position: absolute;
+    bottom: 10px;
+    inset-inline-start: 10px;
+    background: rgba(15, 23, 42, .62);
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.2;
+    padding: 5px 10px;
+    border-radius: 999px;
+    z-index: 9; /* above watermark (8) */
+    backdrop-filter: blur(4px);
+}
+
+.properties-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2, 12px);
+    align-items: stretch;
+}
+
+.property-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 0;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(212, 175, 55, .18);
+}
+
+.property-image {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    flex: 0 0 210px;
+    background: linear-gradient(145deg, rgba(212, 175, 55, .12), rgba(255, 255, 255, .025));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    overflow: hidden;
+}
+
+.property-image > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: var(--mk-img-pos, center center);
+    transition: transform .45s ease, filter .3s ease;
+    -webkit-user-drag: none;
+}
+
+.property-image .mk-photo-wm {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 8;
+    overflow: hidden;
+}
+/* اندازهٔ واترمارک از تنظیمات ادمین (inline از photo-wm-front.js) می‌آید؛
+   این قاعده فقط پیش‌فرض است و !important ندارد تا اسلایدر ادمین را نبندد. */
+.property-image .mk-photo-wm img {
+    width: 26%;
+    max-width: none;
+    height: auto;
+    max-height: 26%;
+    object-fit: contain;
+    object-position: center;
+}
+.property-image .mk-photo-wm-txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 18px;
+    color: rgba(255,255,255,.42);
+    text-shadow: 0 2px 10px rgba(0,0,0,.45);
+    pointer-events: none;
+}
+
+.property-card:hover .property-image > img {
+    transform: scale(1.035);
+}
+
+.property-image-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    width: 100%;
+    height: 100%;
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.property-image-placeholder svg { opacity: .45; }
+
+.property-badges {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    max-width: calc(100% - 20px);
+    z-index: 9; /* above watermark (8) */
+    pointer-events: none;
+}
+
+.property-badge {
+    padding: 4px 9px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .28);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .42);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .18);
+    font-size: 11px;
+    font-weight: 800;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .35);
+}
+
+.property-badge.gold {
+    background: rgba(212, 175, 55, .92);
+    color: #163434;
+    border-color: rgba(255, 236, 170, .75);
+    text-shadow: none;
+}
+.property-badge.loan { background: rgba(6, 95, 70, .92); color: #fff; }
+.property-badge.exchange { background: rgba(23, 58, 138, .88); color: #fff; }
+.property-badge.key { background: rgba(124, 58, 237, .9); color: #fff; }
+
+.price-loan-sub {
+    margin-top: 4px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #0a7a55;
+    line-height: 1.8;
+}
+
+.property-code {
+    margin-top: 12px;
+    color: var(--text-secondary);
+    font-size: 11px;
+}
+
+.property-content {
+    padding: 10px 12px 12px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.property-title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.property-title {
+    min-width: 0;
+    color: var(--text-primary);
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 800;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.property-price {
+    flex: 0 0 auto;
+    color: var(--gold, #D4AF37);
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 900;
+    text-align: left;
+    max-width: 45%;
+    word-break: break-word;
+}
+
+.property-location {
+    margin-top: 5px;
+    color: var(--text-secondary);
+    font-size: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.property-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    flex: 1 1 auto;
+    min-height: 28px;
+}
+
+.property-feature {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 4px 7px;
+    border-radius: 7px;
+    background: var(--bg);
+    color: var(--text-secondary);
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.property-feature.primary { color: var(--primary); }
+
+.property-feature svg,
+.property-badge svg {
+    width: 14px;
+    height: 14px;
+    vertical-align: -2px;
+    flex-shrink: 0;
+}
+
+.property-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+    margin-top: auto;
+    padding-top: 11px;
+}
+
+.property-date {
+    flex: 1 0 100%;
+    font-size: 11px;
+    color: var(--text-secondary, #8a9390);
+}
+
+.property-detail {
+    flex: 1;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--primary);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 750;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.property-detail:hover { background: var(--surface); }
+.property-detail:active { transform: scale(.98); }
+
+.property-like {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.property-compare { font-size: 18px; line-height: 1; }
+
+.property-share svg { display: block; }
+
+.property-like.in-compare {
+    color: #fff;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.property-like.in-fav {
+    color: #fff;
+    background: #e11d48;
+    border-color: #e11d48;
+}
+
+.mk-melkino-rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 4px 0 2px;
+    color: #c9a227;
+    line-height: 1;
+}
+.mk-melkino-rating .off { color: #d5d0c4; }
+.mk-melkino-rating svg { width: 14px; height: 14px; display: block; }
+
+@media (max-width: 700px) {
+    .properties-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+    .property-title-row { flex-direction: column; gap: 3px; }
+    .property-price { max-width: none; text-align: right; font-size: 15px; }
+}
+
+@media (max-width: 380px) {
+    .property-image, .property-card .property-image { height: 190px; flex-basis: 190px; }
+    .property-title { font-size: 13px; }
+}
+
+[data-theme="dark"] .property-card {
+    background: #142525;
+    border-color: #294646;
+}
+[data-theme="dark"] .property-detail {
+    background: #1B3232;
+    border-color: #2E4A4A;
+}
+[data-theme="dark"] .property-feature {
+    background: #1B3232;
+    color: #CFE0DD;
+}
+[data-theme="dark"] .property-feature.primary { color: #72D2CC; }
+[data-theme="dark"] .property-like {
+    background: #142525;
+    border-color: #2E4A4A;
+}
+[data-theme="dark"] .property-like.in-compare {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+[data-theme="dark"] .property-like.in-fav {
+    background: #be123c;
+    border-color: #be123c;
+}
+
+.property-amen-row{display:flex;justify-content:space-around;gap:6px;padding:8px 4px 2px;border-top:1px solid var(--border,rgba(6,78,78,.08));margin-top:8px;flex:0 0 auto}
+.mk-amen-chip{display:inline-flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;font-weight:800;color:#8aa09c;opacity:.42}
+.mk-amen-chip i{font-style:normal}
+.mk-amen-chip.is-on{opacity:1;color:var(--primary,#064e4e)}
+[data-theme="dark"] .mk-amen-chip.is-on{color:#d4af37}
+
+.property-card .property-image > img,
+.property-card .property-image .mk-g-extra {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: var(--mk-img-pos, center center);
+}
+
+/* مدل ۱ — عکس بالا */
+.property-card.mk-l-photo-top { display: flex; flex-direction: column; }
+.property-card.mk-l-photo-top .property-image {
+    aspect-ratio: 16 / 10;
+    height: auto;
+    flex: 0 0 auto;
+    min-height: 160px;
+}
+
+/* مدل ۲ — عکس تمام‌صفحه */
+.property-card.mk-l-photo-full {
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.property-card.mk-l-photo-full .property-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    flex: none;
+    z-index: 0;
+}
+.property-card.mk-l-photo-full .property-image > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.property-card.mk-l-photo-full .property-content {
+    margin-top: auto;
+    background: linear-gradient(180deg, transparent 0%, rgba(8,24,24,.88) 34%);
+    color: #fff;
+    padding: 56px 12px 12px;
+}
+.property-card.mk-l-photo-full .property-title,
+.property-card.mk-l-photo-full .property-location,
+.property-card.mk-l-photo-full .property-code { color: #fff; }
+.property-card.mk-l-photo-full .property-price {
+    background: #d4af37;
+    color: #163434;
+    border-radius: 999px;
+    padding: 4px 10px;
+    display: inline-block;
+    max-width: 100%;
+}
+.property-card.mk-l-photo-full .property-feature {
+    background: rgba(255,255,255,.2);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.32);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.property-card.mk-l-photo-full .property-detail { background: rgba(255,255,255,.12); color: #fff; border-color: rgba(255,255,255,.2); }
+.property-card.mk-l-photo-full .property-like { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.2); color: #fff; }
+.property-card.mk-l-photo-full .mk-amen-chip { color: rgba(255,255,255,.45); }
+.property-card.mk-l-photo-full .mk-amen-chip.is-on { color: #f0d36a; opacity: 1; }
+.property-card.mk-l-photo-full .property-amen-row { border-color: rgba(255,255,255,.15); }
+.property-card.mk-l-photo-full .property-features { border-color: rgba(255,255,255,.15); }
+
+/* مدل ۳ و ۴ — کنار هم: عکس فقط نیمی از کارت، متن همیشه روی پس‌زمینهٔ مات */
+.property-card.mk-l-photo-left,
+.property-card.mk-l-photo-right,
+#mkHomeAdsList .property-card.mk-l-photo-left,
+#mkHomeAdsList .property-card.mk-l-photo-right {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    min-height: 240px;
+    height: auto !important;
+    direction: ltr;
+    overflow: hidden;
+}
+.property-card.mk-l-photo-right,
+#mkHomeAdsList .property-card.mk-l-photo-right {
+    flex-direction: row-reverse !important;
+}
+.property-card.mk-l-photo-left .property-image,
+.property-card.mk-l-photo-right .property-image,
+#mkHomeAdsList .property-card.mk-l-photo-left .property-image,
+#mkHomeAdsList .property-card.mk-l-photo-right .property-image {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 46% !important;
+    max-width: 46% !important;
+    min-width: 0 !important;
+    flex: 0 0 46% !important;
+    height: auto !important;
+    min-height: 240px !important;
+    align-self: stretch !important;
+    z-index: 0;
+}
+.property-card.mk-l-photo-left .property-image > img,
+.property-card.mk-l-photo-right .property-image > img,
+#mkHomeAdsList .property-card.mk-l-photo-left .property-image > img,
+#mkHomeAdsList .property-card.mk-l-photo-right .property-image > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.property-card.mk-l-photo-left .property-content,
+.property-card.mk-l-photo-right .property-content,
+#mkHomeAdsList .property-card.mk-l-photo-left .property-content,
+#mkHomeAdsList .property-card.mk-l-photo-right .property-content {
+    position: relative !important;
+    z-index: 2 !important;
+    flex: 1 1 54% !important;
+    width: 54% !important;
+    max-width: 54% !important;
+    min-width: 0 !important;
+    padding: 12px;
+    direction: rtl;
+    background: var(--surface, #fff);
+}
+
+/* مدل ۵ — عکس شناور */
+.property-card.mk-l-photo-float {
+    padding: 10px 10px 12px;
+    overflow: hidden;
+}
+.property-card.mk-l-photo-float .property-image {
+    height: auto;
+    flex: 0 0 auto;
+    aspect-ratio: 16 / 10;
+    border-radius: 16px;
+    min-height: 150px;
+}
+.property-card.mk-l-photo-float .property-content { padding: 10px 4px 4px; }
+
+/* مدل ۶ — کلاژ */
+.property-card.mk-l-photo-collage .property-image {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, .85fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4px;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    min-height: 170px;
+    flex: 0 0 auto;
+}
+.property-card.mk-l-photo-collage .property-image > img:first-of-type {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.property-card.mk-l-photo-collage .mk-g-extra {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: cover;
+    display: block;
+}
+.property-card.mk-l-photo-collage .property-image .property-badges {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 9;
+}
+.property-card.mk-l-photo-collage .property-image .mk-photo-wm {
+    position: absolute;
+    inset: 0;
+    z-index: 8;
+    pointer-events: none;
+}
+.property-card.mk-l-photo-collage .property-image .mk-decor-badge,
+.property-card.mk-l-photo-collage .property-image-placeholder {
+    display: none !important;
+}
+
+/* مدل ۷ — پرتره */
+.property-card.mk-l-photo-portrait .property-image {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    flex: 0 0 auto;
+    min-height: 180px;
+}
+
+/* مدل ۸ — ادیتوریال */
+.property-card.mk-l-photo-editorial,
+#mkHomeAdsList .property-card.mk-l-photo-editorial {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    min-height: 240px;
+    background: #0b2a2a;
+    color: #fff;
+    direction: ltr;
+    height: auto !important;
+    overflow: hidden;
+}
+.property-card.mk-l-photo-editorial .property-image,
+#mkHomeAdsList .property-card.mk-l-photo-editorial .property-image {
+    position: relative !important;
+    inset: auto !important;
+    width: 52% !important;
+    max-width: 52% !important;
+    min-width: 0 !important;
+    flex: 0 0 52% !important;
+    height: auto !important;
+    min-height: 240px !important;
+    align-self: stretch !important;
+    z-index: 0;
+}
+.property-card.mk-l-photo-editorial .property-image > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.property-card.mk-l-photo-editorial .property-image:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent 84%, #0b2a2a 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+.property-card.mk-l-photo-editorial .property-content,
+#mkHomeAdsList .property-card.mk-l-photo-editorial .property-content {
+    position: relative !important;
+    z-index: 2 !important;
+    flex: 1 1 48% !important;
+    width: 48% !important;
+    max-width: 48% !important;
+    min-width: 0 !important;
+    background: #0b2a2a !important;
+    color: #fff;
+    padding: 14px 12px;
+    direction: rtl;
+}
+.property-card.mk-l-photo-editorial .property-title,
+.property-card.mk-l-photo-editorial .property-location,
+.property-card.mk-l-photo-editorial .property-code { color: #fff; }
+.property-card.mk-l-photo-editorial .property-price {
+    background: #d4af37;
+    color: #163434;
+    border-radius: 12px;
+    padding: 6px 10px;
+    max-width: 100%;
+}
+.property-card.mk-l-photo-editorial .property-feature,
+.property-card.mk-l-magazine .property-feature {
+    background: rgba(255,255,255,.18);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.28);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.property-card.mk-l-photo-editorial .mk-amen-chip { color: rgba(255,255,255,.72); opacity: 1; }
+.property-card.mk-l-photo-editorial .mk-amen-chip.is-on {
+    color: #ffe08a;
+    opacity: 1;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.22);
+    border-radius: 12px;
+    padding: 4px 8px;
+}
+.property-card.mk-l-photo-editorial .property-amen-row,
+.property-card.mk-l-photo-editorial .property-features { border-color: rgba(255,255,255,.12); }
+.property-card.mk-l-photo-editorial .property-detail { background: #d4af37; color: #163434; border: 0; }
+.property-card.mk-l-photo-editorial .property-like { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.18); color: #fff; }
+
+.properties-list[data-card-layout="photo-left"],
+.properties-list[data-card-layout="photo-right"],
+.properties-list[data-card-layout="photo-editorial"],
+.properties-list[data-card-layout="horizontal"],
+.properties-list[data-card-layout="split"],
+.properties-list[data-card-layout="wide"],
+.properties-list[data-card-layout="magazine"],
+#mkHomeAdsList.properties-list[data-card-layout="photo-left"],
+#mkHomeAdsList.properties-list[data-card-layout="photo-right"],
+#mkHomeAdsList.properties-list[data-card-layout="photo-editorial"],
+#mkHomeAdsList.properties-list[data-card-layout="horizontal"],
+#mkHomeAdsList.properties-list[data-card-layout="split"],
+#mkHomeAdsList.properties-list[data-card-layout="wide"],
+#mkHomeAdsList.properties-list[data-card-layout="magazine"],
+.ads-section .properties-list[data-card-layout="photo-left"],
+.ads-section .properties-list[data-card-layout="photo-right"],
+.ads-section .properties-list[data-card-layout="photo-editorial"] {
+    grid-template-columns: 1fr !important;
+}
+
+@media (max-width: 860px) {
+    .properties-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+    .property-card.mk-l-photo-left,
+    .property-card.mk-l-photo-right,
+    .property-card.mk-l-photo-editorial,
+    #mkHomeAdsList .property-card.mk-l-photo-left,
+    #mkHomeAdsList .property-card.mk-l-photo-right,
+    #mkHomeAdsList .property-card.mk-l-photo-editorial {
+        flex-direction: column !important;
+        min-height: 0;
+        direction: rtl;
+    }
+    .property-card.mk-l-photo-left .property-image,
+    .property-card.mk-l-photo-right .property-image,
+    .property-card.mk-l-photo-editorial .property-image,
+    #mkHomeAdsList .property-card.mk-l-photo-left .property-image,
+    #mkHomeAdsList .property-card.mk-l-photo-right .property-image,
+    #mkHomeAdsList .property-card.mk-l-photo-editorial .property-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 auto !important;
+        height: auto !important;
+        min-height: 160px !important;
+        aspect-ratio: 16 / 10;
+        max-height: 220px;
+    }
+    .property-card.mk-l-photo-left .property-content,
+    .property-card.mk-l-photo-right .property-content,
+    .property-card.mk-l-photo-editorial .property-content,
+    #mkHomeAdsList .property-card.mk-l-photo-left .property-content,
+    #mkHomeAdsList .property-card.mk-l-photo-right .property-content,
+    #mkHomeAdsList .property-card.mk-l-photo-editorial .property-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 1 1 auto !important;
+    }
+    .property-card.mk-l-photo-editorial .property-image:after {
+        z-index: 1;
+        background: linear-gradient(180deg, transparent 82%, #0b2a2a 100%);
+    }
+    .property-card.mk-l-photo-full { min-height: 300px; }
+    .property-card.mk-l-photo-portrait .property-image { aspect-ratio: 16 / 10; min-height: 160px; }
+    .property-card.mk-l-photo-collage .property-image { aspect-ratio: 16 / 10; min-height: 150px; }
+}
+
+@media (max-width: 420px) {
+    .property-card.mk-l-photo-full { min-height: 280px; }
+    .property-amen-row { gap: 4px; }
+    .mk-amen-chip { font-size: 11px; }
+    .property-footer { gap: 6px; }
+    .property-detail, .property-like { height: 40px; }
+}
+
+@media (min-width: 1240px) {
+    .properties-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

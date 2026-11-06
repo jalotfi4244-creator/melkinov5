@@ -1,0 +1,42 @@
+/* Shared home-card context; also used by Studio thumbnails. */
+#mkHomeAdsList .property-card,
+#mkHomeAdsList .promo-card {
+    height: auto;
+    min-width: 0;
+}
+#mkHomeAdsList .property-card.mk-l-photo-left,
+#mkHomeAdsList .property-card.mk-l-photo-right,
+#mkHomeAdsList .property-card.mk-l-photo-editorial,
+#mkHomeAdsList .property-card.mk-l-horizontal,
+#mkHomeAdsList .property-card.mk-l-split,
+#mkHomeAdsList .property-card.mk-l-wide,
+#mkHomeAdsList .property-card.mk-l-magazine {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    height: auto !important;
+}
+#mkHomeAdsList .property-card.mk-l-photo-right {
+    flex-direction: row-reverse !important;
+}
+@media (max-width: 720px) {
+    #mkHomeAdsList .property-card.mk-l-photo-left,
+    #mkHomeAdsList .property-card.mk-l-photo-right,
+    #mkHomeAdsList .property-card.mk-l-photo-editorial,
+    #mkHomeAdsList .property-card.mk-l-horizontal,
+    #mkHomeAdsList .property-card.mk-l-split,
+    #mkHomeAdsList .property-card.mk-l-wide,
+    #mkHomeAdsList .property-card.mk-l-magazine {
+        flex-direction: column !important;
+    }
+}
+#mkHomeAdsList .property-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+#mkHomeAdsList .property-footer {
+    margin-top: auto;
+}
+
+
