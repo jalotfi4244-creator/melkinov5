@@ -1,0 +1,831 @@
+/* ۱۰۰ مدل کارت آگهی ملکینو — ۲۰ ساختار × ۵ نوع چیدمان. تولیدشده توسط card-models/gen.py */
+/* nx-01 — قوسی نخست */
+.property-card.mk-l-nx-01{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-01 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-01 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-01 .property-image{height:auto!important;aspect-ratio:16 / 9;border-radius:999px 999px 0 0;margin:10px 10px 0;}
+.property-card.mk-l-nx-01 .property-content{text-align:center;padding:10px 12px;}
+/* nx-02 — قوسی دوم */
+.property-card.mk-l-nx-02{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-02 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-02 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-02 .property-image{height:auto!important;aspect-ratio:4 / 3;border-radius:999px 999px 8px 8px;margin:10px 10px 0;}
+.property-card.mk-l-nx-02 .property-content{text-align:center;padding:14px 16px;}
+.property-card.mk-l-nx-02 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-02 .property-feature,.property-card.mk-l-nx-02 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-03 — قوسی سوم */
+.property-card.mk-l-nx-03{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-03 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-03 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-03 .property-image{height:auto!important;aspect-ratio:1 / 1;border-radius:999px 999px 16px 16px;margin:10px 10px 0;}
+.property-card.mk-l-nx-03 .property-content{text-align:center;padding:20px 22px;}
+.property-card.mk-l-nx-03 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-03 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-04 — قوسی چهارم */
+.property-card.mk-l-nx-04{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-04 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-04 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-04 .property-image{height:auto!important;aspect-ratio:3 / 4;border-radius:999px 999px 24px 24px;margin:10px 10px 0;}
+.property-card.mk-l-nx-04 .property-content{text-align:center;padding:10px 12px;}
+.property-card.mk-l-nx-04 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-05 — قوسی پنجم */
+.property-card.mk-l-nx-05{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-05 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-05 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-05 .property-image{height:auto!important;aspect-ratio:21 / 9;border-radius:999px 999px 999px 999px;margin:10px 10px 0;}
+.property-card.mk-l-nx-05 .property-content{text-align:center;padding:14px 16px;}
+/* nx-06 — مدالیون نخست */
+.property-card.mk-l-nx-06{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-06 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-06 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-06 .property-image{height:auto!important;width:min(70%,230px);aspect-ratio:1;margin:16px auto 0;border-radius:50%;box-shadow:0 0 0 5px var(--surface),0 0 0 6px var(--gold);}
+.property-card.mk-l-nx-06 .property-content{text-align:center;padding:10px 12px;}
+.property-card.mk-l-nx-06 .property-feature,.property-card.mk-l-nx-06 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-07 — مدالیون دوم */
+.property-card.mk-l-nx-07{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-07 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-07 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-07 .property-image{height:auto!important;width:min(70%,230px);aspect-ratio:1;margin:16px auto 0;border-radius:50%;box-shadow:0 0 0 5px var(--surface),0 0 0 6px var(--gold);}
+.property-card.mk-l-nx-07 .property-content{text-align:center;padding:14px 16px;}
+.property-card.mk-l-nx-07 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-07 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-08 — مدالیون سوم */
+.property-card.mk-l-nx-08{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-08 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-08 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-08 .property-image{height:auto!important;width:min(70%,230px);aspect-ratio:1;margin:16px auto 0;border-radius:50%;box-shadow:0 0 0 5px var(--surface),0 0 0 6px var(--gold);}
+.property-card.mk-l-nx-08 .property-content{text-align:center;padding:20px 22px;}
+.property-card.mk-l-nx-08 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-08 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-09 — مدالیون چهارم */
+.property-card.mk-l-nx-09{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-09 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-09 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-09 .property-image{height:auto!important;width:min(70%,230px);aspect-ratio:1;margin:16px auto 0;border-radius:50%;box-shadow:0 0 0 5px var(--surface),0 0 0 6px var(--gold);}
+.property-card.mk-l-nx-09 .property-content{text-align:center;padding:10px 12px;}
+/* nx-10 — مدالیون پنجم */
+.property-card.mk-l-nx-10{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-10 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-10 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-10 .property-image{height:auto!important;width:min(70%,230px);aspect-ratio:1;margin:16px auto 0;border-radius:50%;box-shadow:0 0 0 5px var(--surface),0 0 0 6px var(--gold);}
+.property-card.mk-l-nx-10 .property-content{text-align:center;padding:14px 16px;}
+.property-card.mk-l-nx-10 .property-feature,.property-card.mk-l-nx-10 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-11 — مورب نخست */
+.property-card.mk-l-nx-11{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-11 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-11 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-11 .property-image{height:auto!important;aspect-ratio:1 / 1;clip-path:polygon(0 0,100% 0,100% 80%,0 100%);}
+.property-card.mk-l-nx-11 .property-content{margin-top:-26px;position:relative;padding:10px 12px;}
+.property-card.mk-l-nx-11 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-12 — مورب دوم */
+.property-card.mk-l-nx-12{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-12 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-12 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-12 .property-image{height:auto!important;aspect-ratio:3 / 4;clip-path:polygon(0 0,100% 0,100% 80%,0 100%);}
+.property-card.mk-l-nx-12 .property-content{margin-top:-26px;position:relative;padding:14px 16px;}
+.property-card.mk-l-nx-12 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-12 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-13 — مورب سوم */
+.property-card.mk-l-nx-13{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-13 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-13 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-13 .property-image{height:auto!important;aspect-ratio:21 / 9;clip-path:polygon(0 0,100% 0,100% 80%,0 100%);}
+.property-card.mk-l-nx-13 .property-content{margin-top:-26px;position:relative;padding:20px 22px;}
+.property-card.mk-l-nx-13 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+/* nx-14 — مورب چهارم */
+.property-card.mk-l-nx-14{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-14 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-14 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-14 .property-image{height:auto!important;aspect-ratio:16 / 9;clip-path:polygon(0 0,100% 0,100% 80%,0 100%);}
+.property-card.mk-l-nx-14 .property-content{margin-top:-26px;position:relative;padding:10px 12px;}
+.property-card.mk-l-nx-14 .property-feature,.property-card.mk-l-nx-14 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-15 — مورب پنجم */
+.property-card.mk-l-nx-15{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-15 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-15 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-15 .property-image{height:auto!important;aspect-ratio:4 / 3;clip-path:polygon(0 0,100% 0,100% 80%,0 100%);}
+.property-card.mk-l-nx-15 .property-content{margin-top:-26px;position:relative;padding:14px 16px;}
+.property-card.mk-l-nx-15 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-16 — بلیت نخست */
+.property-card.mk-l-nx-16{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-16 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-16 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-16 {flex-direction:row;border-radius:16px;}
+.property-card.mk-l-nx-16 .property-image{flex:0 0 34%;height:auto!important;min-height:100%;}
+.property-card.mk-l-nx-16 .property-content{padding:10px 12px;}
+.property-card.mk-l-nx-16 ::before,.property-card.mk-l-nx-16 ::after{content:"";position:absolute;left:34%;width:18px;height:18px;border-radius:50%;background:var(--bg,#111);transform:translate(-50%,0);top:-9px;z-index:2;}
+.property-card.mk-l-nx-16 ::after{top:auto;bottom:-9px;}
+.property-card.mk-l-nx-16 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-16 .property-content{min-width:0;}
+.property-card.mk-l-nx-16 .property-title-row{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-16 .property-price{font-size:clamp(12px,1.05vw,15px);white-space:normal;padding-inline:8px;max-width:100%;}
+/* nx-17 — بلیت دوم */
+.property-card.mk-l-nx-17{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-17 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-17 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-17 {flex-direction:row;border-radius:16px;}
+.property-card.mk-l-nx-17 .property-image{flex:0 0 34%;height:auto!important;min-height:100%;}
+.property-card.mk-l-nx-17 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-17 ::before,.property-card.mk-l-nx-17 ::after{content:"";position:absolute;left:34%;width:18px;height:18px;border-radius:50%;background:var(--bg,#111);transform:translate(-50%,0);top:-9px;z-index:2;}
+.property-card.mk-l-nx-17 ::after{top:auto;bottom:-9px;}
+.property-card.mk-l-nx-17 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-17 .property-content{min-width:0;}
+.property-card.mk-l-nx-17 .property-title-row{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-17 .property-price{font-size:clamp(12px,1.05vw,15px);white-space:normal;padding-inline:8px;max-width:100%;}
+/* nx-18 — بلیت سوم */
+.property-card.mk-l-nx-18{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-18 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-18 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-18 {flex-direction:row;border-radius:16px;}
+.property-card.mk-l-nx-18 .property-image{flex:0 0 34%;height:auto!important;min-height:100%;}
+.property-card.mk-l-nx-18 .property-content{padding:20px 22px;}
+.property-card.mk-l-nx-18 ::before,.property-card.mk-l-nx-18 ::after{content:"";position:absolute;left:34%;width:18px;height:18px;border-radius:50%;background:var(--bg,#111);transform:translate(-50%,0);top:-9px;z-index:2;}
+.property-card.mk-l-nx-18 ::after{top:auto;bottom:-9px;}
+.property-card.mk-l-nx-18 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-18 .property-feature,.property-card.mk-l-nx-18 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+.property-card.mk-l-nx-18 .property-content{min-width:0;}
+.property-card.mk-l-nx-18 .property-title-row{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-18 .property-price{font-size:clamp(12px,1.05vw,15px);white-space:normal;padding-inline:8px;max-width:100%;}
+/* nx-19 — بلیت چهارم */
+.property-card.mk-l-nx-19{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-19 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-19 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-19 {flex-direction:row;border-radius:16px;}
+.property-card.mk-l-nx-19 .property-image{flex:0 0 34%;height:auto!important;min-height:100%;}
+.property-card.mk-l-nx-19 .property-content{padding:10px 12px;}
+.property-card.mk-l-nx-19 ::before,.property-card.mk-l-nx-19 ::after{content:"";position:absolute;left:34%;width:18px;height:18px;border-radius:50%;background:var(--bg,#111);transform:translate(-50%,0);top:-9px;z-index:2;}
+.property-card.mk-l-nx-19 ::after{top:auto;bottom:-9px;}
+.property-card.mk-l-nx-19 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+.property-card.mk-l-nx-19 .property-content{min-width:0;}
+.property-card.mk-l-nx-19 .property-title-row{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-19 .property-price{font-size:clamp(12px,1.05vw,15px);white-space:normal;padding-inline:8px;max-width:100%;}
+/* nx-20 — بلیت پنجم */
+.property-card.mk-l-nx-20{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-20 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-20 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-20 {flex-direction:row;border-radius:16px;}
+.property-card.mk-l-nx-20 .property-image{flex:0 0 34%;height:auto!important;min-height:100%;}
+.property-card.mk-l-nx-20 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-20 ::before,.property-card.mk-l-nx-20 ::after{content:"";position:absolute;left:34%;width:18px;height:18px;border-radius:50%;background:var(--bg,#111);transform:translate(-50%,0);top:-9px;z-index:2;}
+.property-card.mk-l-nx-20 ::after{top:auto;bottom:-9px;}
+.property-card.mk-l-nx-20 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-20 .property-content{min-width:0;}
+.property-card.mk-l-nx-20 .property-title-row{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-20 .property-price{font-size:clamp(12px,1.05vw,15px);white-space:normal;padding-inline:8px;max-width:100%;}
+/* nx-21 — قاب دوگانه نخست */
+.property-card.mk-l-nx-21{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-21 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-21 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-21 {padding:10px;}
+.property-card.mk-l-nx-21 .property-image{height:auto!important;aspect-ratio:21 / 9;outline:1px solid var(--gold);outline-offset:6px;border-radius:24px;}
+.property-card.mk-l-nx-21 .property-content{padding:10px 12px 0;}
+/* nx-22 — قاب دوگانه دوم */
+.property-card.mk-l-nx-22{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-22 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-22 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-22 {padding:10px;}
+.property-card.mk-l-nx-22 .property-image{height:auto!important;aspect-ratio:16 / 9;outline:1px solid var(--gold);outline-offset:6px;border-radius:999px;}
+.property-card.mk-l-nx-22 .property-content{padding:14px 16px 0;}
+.property-card.mk-l-nx-22 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-22 .property-feature,.property-card.mk-l-nx-22 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-23 — قاب دوگانه سوم */
+.property-card.mk-l-nx-23{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-23 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-23 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-23 {padding:10px;}
+.property-card.mk-l-nx-23 .property-image{height:auto!important;aspect-ratio:4 / 3;outline:1px solid var(--gold);outline-offset:6px;border-radius:0;}
+.property-card.mk-l-nx-23 .property-content{padding:20px 22px 0;}
+.property-card.mk-l-nx-23 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-23 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-24 — قاب دوگانه چهارم */
+.property-card.mk-l-nx-24{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-24 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-24 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-24 {padding:10px;}
+.property-card.mk-l-nx-24 .property-image{height:auto!important;aspect-ratio:1 / 1;outline:1px solid var(--gold);outline-offset:6px;border-radius:8px;}
+.property-card.mk-l-nx-24 .property-content{padding:10px 12px 0;}
+.property-card.mk-l-nx-24 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-25 — قاب دوگانه پنجم */
+.property-card.mk-l-nx-25{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-25 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-25 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-25 {padding:10px;}
+.property-card.mk-l-nx-25 .property-image{height:auto!important;aspect-ratio:3 / 4;outline:1px solid var(--gold);outline-offset:6px;border-radius:16px;}
+.property-card.mk-l-nx-25 .property-content{padding:14px 16px 0;}
+/* nx-26 — نوار پایین نخست */
+.property-card.mk-l-nx-26{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-26 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-26 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-26 {min-height:500px;}
+.property-card.mk-l-nx-26 .property-image{flex:1 1 auto;height:auto!important;min-height:240px;}
+.property-card.mk-l-nx-26 .property-content{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(8px);}
+.property-card.mk-l-nx-26 .property-feature,.property-card.mk-l-nx-26 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-27 — نوار پایین دوم */
+.property-card.mk-l-nx-27{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-27 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-27 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-27 {min-height:500px;}
+.property-card.mk-l-nx-27 .property-image{flex:1 1 auto;height:auto!important;min-height:240px;}
+.property-card.mk-l-nx-27 .property-content{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(8px);}
+.property-card.mk-l-nx-27 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-27 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-28 — نوار پایین سوم */
+.property-card.mk-l-nx-28{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-28 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-28 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-28 {min-height:500px;}
+.property-card.mk-l-nx-28 .property-image{flex:1 1 auto;height:auto!important;min-height:240px;}
+.property-card.mk-l-nx-28 .property-content{position:absolute;left:0;right:0;bottom:0;padding:20px 22px;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(8px);}
+.property-card.mk-l-nx-28 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-28 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-29 — نوار پایین چهارم */
+.property-card.mk-l-nx-29{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-29 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-29 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-29 {min-height:500px;}
+.property-card.mk-l-nx-29 .property-image{flex:1 1 auto;height:auto!important;min-height:240px;}
+.property-card.mk-l-nx-29 .property-content{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(8px);}
+/* nx-30 — نوار پایین پنجم */
+.property-card.mk-l-nx-30{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-30 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-30 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-30 {min-height:500px;}
+.property-card.mk-l-nx-30 .property-image{flex:1 1 auto;height:auto!important;min-height:240px;}
+.property-card.mk-l-nx-30 .property-content{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(8px);}
+.property-card.mk-l-nx-30 .property-feature,.property-card.mk-l-nx-30 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-31 — نوار کناری نخست */
+.property-card.mk-l-nx-31{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-31 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-31 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-31 .property-image{height:auto!important;aspect-ratio:4 / 3;}
+.property-card.mk-l-nx-31 .property-image::after{content:"";position:absolute;top:0;bottom:0;right:0;width:8px;background:var(--gold);}
+.property-card.mk-l-nx-31 .property-content{padding:10px 12px;border-right:4px solid var(--gold);}
+.property-card.mk-l-nx-31 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-32 — نوار کناری دوم */
+.property-card.mk-l-nx-32{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-32 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-32 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-32 .property-image{height:auto!important;aspect-ratio:1 / 1;}
+.property-card.mk-l-nx-32 .property-image::after{content:"";position:absolute;top:0;bottom:0;right:0;width:8px;background:var(--gold);}
+.property-card.mk-l-nx-32 .property-content{padding:14px 16px;border-right:4px solid var(--gold);}
+.property-card.mk-l-nx-32 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-32 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-33 — نوار کناری سوم */
+.property-card.mk-l-nx-33{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-33 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-33 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-33 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-33 .property-image::after{content:"";position:absolute;top:0;bottom:0;right:0;width:8px;background:var(--gold);}
+.property-card.mk-l-nx-33 .property-content{padding:20px 22px;border-right:4px solid var(--gold);}
+.property-card.mk-l-nx-33 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+/* nx-34 — نوار کناری چهارم */
+.property-card.mk-l-nx-34{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-34 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-34 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-34 .property-image{height:auto!important;aspect-ratio:21 / 9;}
+.property-card.mk-l-nx-34 .property-image::after{content:"";position:absolute;top:0;bottom:0;right:0;width:8px;background:var(--gold);}
+.property-card.mk-l-nx-34 .property-content{padding:10px 12px;border-right:4px solid var(--gold);}
+.property-card.mk-l-nx-34 .property-feature,.property-card.mk-l-nx-34 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-35 — نوار کناری پنجم */
+.property-card.mk-l-nx-35{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-35 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-35 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-35 .property-image{height:auto!important;aspect-ratio:16 / 9;}
+.property-card.mk-l-nx-35 .property-image::after{content:"";position:absolute;top:0;bottom:0;right:0;width:8px;background:var(--gold);}
+.property-card.mk-l-nx-35 .property-content{padding:14px 16px;border-right:4px solid var(--gold);}
+.property-card.mk-l-nx-35 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-36 — پرتره نخست */
+.property-card.mk-l-nx-36{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-36 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-36 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-36 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-36 .property-content{padding:10px 12px;}
+.property-card.mk-l-nx-36 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-37 — پرتره دوم */
+.property-card.mk-l-nx-37{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-37 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-37 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-37 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-37 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-37 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+/* nx-38 — پرتره سوم */
+.property-card.mk-l-nx-38{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-38 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-38 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-38 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-38 .property-content{padding:20px 22px;}
+.property-card.mk-l-nx-38 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-38 .property-feature,.property-card.mk-l-nx-38 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-39 — پرتره چهارم */
+.property-card.mk-l-nx-39{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-39 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-39 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-39 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-39 .property-content{padding:10px 12px;}
+.property-card.mk-l-nx-39 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-40 — پرتره پنجم */
+.property-card.mk-l-nx-40{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-40 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-40 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-40 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-40 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-40 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-41 — شیشه‌ای نخست */
+.property-card.mk-l-nx-41{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-41 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-41 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-41 {min-height:500px;}
+.property-card.mk-l-nx-41 .property-image{flex:1 1 auto;height:auto!important;min-height:260px;}
+.property-card.mk-l-nx-41 .property-content{position:absolute;left:12px;right:12px;bottom:12px;padding:10px 12px;background:rgba(255,255,255,.14);backdrop-filter:blur(12px) saturate(140%);border:1px solid rgba(255,255,255,.28);border-radius:8px;}
+/* nx-42 — شیشه‌ای دوم */
+.property-card.mk-l-nx-42{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-42 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-42 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-42 {min-height:500px;}
+.property-card.mk-l-nx-42 .property-image{flex:1 1 auto;height:auto!important;min-height:260px;}
+.property-card.mk-l-nx-42 .property-content{position:absolute;left:12px;right:12px;bottom:12px;padding:14px 16px;background:rgba(255,255,255,.14);backdrop-filter:blur(12px) saturate(140%);border:1px solid rgba(255,255,255,.28);border-radius:16px;}
+.property-card.mk-l-nx-42 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-42 .property-feature,.property-card.mk-l-nx-42 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-43 — شیشه‌ای سوم */
+.property-card.mk-l-nx-43{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-43 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-43 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-43 {min-height:500px;}
+.property-card.mk-l-nx-43 .property-image{flex:1 1 auto;height:auto!important;min-height:260px;}
+.property-card.mk-l-nx-43 .property-content{position:absolute;left:12px;right:12px;bottom:12px;padding:20px 22px;background:rgba(255,255,255,.14);backdrop-filter:blur(12px) saturate(140%);border:1px solid rgba(255,255,255,.28);border-radius:24px;}
+.property-card.mk-l-nx-43 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-43 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-44 — شیشه‌ای چهارم */
+.property-card.mk-l-nx-44{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-44 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-44 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-44 {min-height:500px;}
+.property-card.mk-l-nx-44 .property-image{flex:1 1 auto;height:auto!important;min-height:260px;}
+.property-card.mk-l-nx-44 .property-content{position:absolute;left:12px;right:12px;bottom:12px;padding:10px 12px;background:rgba(255,255,255,.14);backdrop-filter:blur(12px) saturate(140%);border:1px solid rgba(255,255,255,.28);border-radius:999px;}
+.property-card.mk-l-nx-44 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-45 — شیشه‌ای پنجم */
+.property-card.mk-l-nx-45{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-45 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-45 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-45 {min-height:500px;}
+.property-card.mk-l-nx-45 .property-image{flex:1 1 auto;height:auto!important;min-height:260px;}
+.property-card.mk-l-nx-45 .property-content{position:absolute;left:12px;right:12px;bottom:12px;padding:14px 16px;background:rgba(255,255,255,.14);backdrop-filter:blur(12px) saturate(140%);border:1px solid rgba(255,255,255,.28);border-radius:16px;}
+/* nx-46 — گوشه‌بر نخست */
+.property-card.mk-l-nx-46{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-46 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-46 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-46 .property-image{height:auto!important;aspect-ratio:21 / 9;}
+.property-card.mk-l-nx-46 .property-content{position:relative;padding:10px 12px;}
+.property-card.mk-l-nx-46 .property-content::before{content:"";position:absolute;top:-14px;right:18px;border-left:14px solid transparent;border-right:14px solid transparent;border-bottom:14px solid var(--gold);}
+.property-card.mk-l-nx-46 .property-feature,.property-card.mk-l-nx-46 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-47 — گوشه‌بر دوم */
+.property-card.mk-l-nx-47{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-47 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-47 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-47 .property-image{height:auto!important;aspect-ratio:16 / 9;}
+.property-card.mk-l-nx-47 .property-content{position:relative;padding:14px 16px;}
+.property-card.mk-l-nx-47 .property-content::before{content:"";position:absolute;top:-14px;right:18px;border-left:14px solid transparent;border-right:14px solid transparent;border-bottom:14px solid var(--gold);}
+.property-card.mk-l-nx-47 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-47 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-48 — گوشه‌بر سوم */
+.property-card.mk-l-nx-48{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-48 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-48 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-48 .property-image{height:auto!important;aspect-ratio:4 / 3;}
+.property-card.mk-l-nx-48 .property-content{position:relative;padding:20px 22px;}
+.property-card.mk-l-nx-48 .property-content::before{content:"";position:absolute;top:-14px;right:18px;border-left:14px solid transparent;border-right:14px solid transparent;border-bottom:14px solid var(--gold);}
+.property-card.mk-l-nx-48 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-48 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-49 — گوشه‌بر چهارم */
+.property-card.mk-l-nx-49{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-49 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-49 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-49 .property-image{height:auto!important;aspect-ratio:1 / 1;}
+.property-card.mk-l-nx-49 .property-content{position:relative;padding:10px 12px;}
+.property-card.mk-l-nx-49 .property-content::before{content:"";position:absolute;top:-14px;right:18px;border-left:14px solid transparent;border-right:14px solid transparent;border-bottom:14px solid var(--gold);}
+/* nx-50 — گوشه‌بر پنجم */
+.property-card.mk-l-nx-50{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-50 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-50 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-50 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-50 .property-content{position:relative;padding:14px 16px;}
+.property-card.mk-l-nx-50 .property-content::before{content:"";position:absolute;top:-14px;right:18px;border-left:14px solid transparent;border-right:14px solid transparent;border-bottom:14px solid var(--gold);}
+.property-card.mk-l-nx-50 .property-feature,.property-card.mk-l-nx-50 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-51 — دو بلوکی نخست */
+.property-card.mk-l-nx-51{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-51 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-51 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-51 .property-image{height:auto!important;aspect-ratio:16 / 9;}
+.property-card.mk-l-nx-51 .property-content{background:color-mix(in srgb,var(--primary) 12%,var(--surface));padding:10px 12px;}
+.property-card.mk-l-nx-51 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-52 — دو بلوکی دوم */
+.property-card.mk-l-nx-52{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-52 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-52 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-52 .property-image{height:auto!important;aspect-ratio:4 / 3;}
+.property-card.mk-l-nx-52 .property-content{background:color-mix(in srgb,var(--primary) 12%,var(--surface));padding:14px 16px;}
+.property-card.mk-l-nx-52 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-52 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-53 — دو بلوکی سوم */
+.property-card.mk-l-nx-53{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-53 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-53 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-53 .property-image{height:auto!important;aspect-ratio:1 / 1;}
+.property-card.mk-l-nx-53 .property-content{background:color-mix(in srgb,var(--primary) 12%,var(--surface));padding:20px 22px;}
+.property-card.mk-l-nx-53 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+/* nx-54 — دو بلوکی چهارم */
+.property-card.mk-l-nx-54{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-54 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-54 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-54 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-54 .property-content{background:color-mix(in srgb,var(--primary) 12%,var(--surface));padding:10px 12px;}
+.property-card.mk-l-nx-54 .property-feature,.property-card.mk-l-nx-54 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-55 — دو بلوکی پنجم */
+.property-card.mk-l-nx-55{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-55 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-55 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-55 .property-image{height:auto!important;aspect-ratio:21 / 9;}
+.property-card.mk-l-nx-55 .property-content{background:color-mix(in srgb,var(--primary) 12%,var(--surface));padding:14px 16px;}
+.property-card.mk-l-nx-55 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-56 — نورافکن نخست */
+.property-card.mk-l-nx-56{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-56 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-56 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-56 {min-height:500px;}
+.property-card.mk-l-nx-56 .property-image{flex:1 1 auto;height:auto!important;min-height:230px;}
+.property-card.mk-l-nx-56 .property-image::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,transparent 28%,rgba(0,0,0,.6));}
+.property-card.mk-l-nx-56 .property-content{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;}
+.property-card.mk-l-nx-56 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-57 — نورافکن دوم */
+.property-card.mk-l-nx-57{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-57 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-57 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-57 {min-height:500px;}
+.property-card.mk-l-nx-57 .property-image{flex:1 1 auto;height:auto!important;min-height:230px;}
+.property-card.mk-l-nx-57 .property-image::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,transparent 28%,rgba(0,0,0,.6));}
+.property-card.mk-l-nx-57 .property-content{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;}
+.property-card.mk-l-nx-57 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+/* nx-58 — نورافکن سوم */
+.property-card.mk-l-nx-58{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-58 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-58 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-58 {min-height:500px;}
+.property-card.mk-l-nx-58 .property-image{flex:1 1 auto;height:auto!important;min-height:230px;}
+.property-card.mk-l-nx-58 .property-image::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,transparent 28%,rgba(0,0,0,.6));}
+.property-card.mk-l-nx-58 .property-content{position:absolute;left:0;right:0;bottom:0;padding:20px 22px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;}
+.property-card.mk-l-nx-58 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-58 .property-feature,.property-card.mk-l-nx-58 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-59 — نورافکن چهارم */
+.property-card.mk-l-nx-59{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-59 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-59 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-59 {min-height:500px;}
+.property-card.mk-l-nx-59 .property-image{flex:1 1 auto;height:auto!important;min-height:230px;}
+.property-card.mk-l-nx-59 .property-image::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,transparent 28%,rgba(0,0,0,.6));}
+.property-card.mk-l-nx-59 .property-content{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;}
+.property-card.mk-l-nx-59 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-60 — نورافکن پنجم */
+.property-card.mk-l-nx-60{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-60 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-60 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-60 {min-height:500px;}
+.property-card.mk-l-nx-60 .property-image{flex:1 1 auto;height:auto!important;min-height:230px;}
+.property-card.mk-l-nx-60 .property-image::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,transparent 28%,rgba(0,0,0,.6));}
+.property-card.mk-l-nx-60 .property-content{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;}
+.property-card.mk-l-nx-60 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-61 — خطی نخست */
+.property-card.mk-l-nx-61{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-61 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-61 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-61 .property-features{flex-direction:column;align-items:flex-start;border-left:2px dotted var(--gold);padding-left:10px;}
+.property-card.mk-l-nx-61 .property-content{padding:10px 12px;}
+/* nx-62 — خطی دوم */
+.property-card.mk-l-nx-62{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-62 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-62 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-62 .property-features{flex-direction:column;align-items:flex-start;border-left:2px dotted var(--gold);padding-left:10px;}
+.property-card.mk-l-nx-62 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-62 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-62 .property-feature,.property-card.mk-l-nx-62 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-63 — خطی سوم */
+.property-card.mk-l-nx-63{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-63 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-63 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-63 .property-features{flex-direction:column;align-items:flex-start;border-left:2px dotted var(--gold);padding-left:10px;}
+.property-card.mk-l-nx-63 .property-content{padding:20px 22px;}
+.property-card.mk-l-nx-63 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-63 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-64 — خطی چهارم */
+.property-card.mk-l-nx-64{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-64 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-64 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-64 .property-features{flex-direction:column;align-items:flex-start;border-left:2px dotted var(--gold);padding-left:10px;}
+.property-card.mk-l-nx-64 .property-content{padding:10px 12px;}
+.property-card.mk-l-nx-64 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-65 — خطی پنجم */
+.property-card.mk-l-nx-65{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-65 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-65 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-65 .property-features{flex-direction:column;align-items:flex-start;border-left:2px dotted var(--gold);padding-left:10px;}
+.property-card.mk-l-nx-65 .property-content{padding:14px 16px;}
+/* nx-66 — کنتوری نخست */
+.property-card.mk-l-nx-66{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-66 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-66 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-66 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-66 .property-price{color:transparent!important;-webkit-text-stroke:1px var(--gold);}
+.property-card.mk-l-nx-66 .property-content{padding:10px 12px;}
+.property-card.mk-l-nx-66 .property-feature,.property-card.mk-l-nx-66 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-67 — کنتوری دوم */
+.property-card.mk-l-nx-67{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-67 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-67 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-67 .property-image{height:auto!important;aspect-ratio:21 / 9;}
+.property-card.mk-l-nx-67 .property-price{color:transparent!important;-webkit-text-stroke:1px var(--gold);}
+.property-card.mk-l-nx-67 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-67 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-67 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-68 — کنتوری سوم */
+.property-card.mk-l-nx-68{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-68 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-68 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-68 .property-image{height:auto!important;aspect-ratio:16 / 9;}
+.property-card.mk-l-nx-68 .property-price{color:transparent!important;-webkit-text-stroke:1px var(--gold);}
+.property-card.mk-l-nx-68 .property-content{padding:20px 22px;}
+.property-card.mk-l-nx-68 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-68 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-69 — کنتوری چهارم */
+.property-card.mk-l-nx-69{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-69 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-69 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-69 .property-image{height:auto!important;aspect-ratio:4 / 3;}
+.property-card.mk-l-nx-69 .property-price{color:transparent!important;-webkit-text-stroke:1px var(--gold);}
+.property-card.mk-l-nx-69 .property-content{padding:10px 12px;}
+/* nx-70 — کنتوری پنجم */
+.property-card.mk-l-nx-70{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-70 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-70 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-70 .property-image{height:auto!important;aspect-ratio:1 / 1;}
+.property-card.mk-l-nx-70 .property-price{color:transparent!important;-webkit-text-stroke:1px var(--gold);}
+.property-card.mk-l-nx-70 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-70 .property-feature,.property-card.mk-l-nx-70 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-71 — مرز درخشان نخست */
+.property-card.mk-l-nx-71{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-71 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-71 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-71 {background:#0c1116;border:0;}
+.property-card.mk-l-nx-71 ::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg,var(--gold),var(--primary));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
+.property-card.mk-l-nx-71 .property-content{padding:10px 12px;color:#e8edf2;}
+.property-card.mk-l-nx-71 .property-title{color:#fff!important;}
+.property-card.mk-l-nx-71 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-72 — مرز درخشان دوم */
+.property-card.mk-l-nx-72{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-72 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-72 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-72 {background:#0c1116;border:0;}
+.property-card.mk-l-nx-72 ::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg,var(--gold),var(--primary));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
+.property-card.mk-l-nx-72 .property-content{padding:14px 16px;color:#e8edf2;}
+.property-card.mk-l-nx-72 .property-title{color:#fff!important;}
+.property-card.mk-l-nx-72 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-72 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-73 — مرز درخشان سوم */
+.property-card.mk-l-nx-73{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-73 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-73 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-73 {background:#0c1116;border:0;}
+.property-card.mk-l-nx-73 ::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg,var(--gold),var(--primary));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
+.property-card.mk-l-nx-73 .property-content{padding:20px 22px;color:#e8edf2;}
+.property-card.mk-l-nx-73 .property-title{color:#fff!important;}
+.property-card.mk-l-nx-73 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+/* nx-74 — مرز درخشان چهارم */
+.property-card.mk-l-nx-74{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-74 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-74 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-74 {background:#0c1116;border:0;}
+.property-card.mk-l-nx-74 ::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg,var(--gold),var(--primary));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
+.property-card.mk-l-nx-74 .property-content{padding:10px 12px;color:#e8edf2;}
+.property-card.mk-l-nx-74 .property-title{color:#fff!important;}
+.property-card.mk-l-nx-74 .property-feature,.property-card.mk-l-nx-74 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-75 — مرز درخشان پنجم */
+.property-card.mk-l-nx-75{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-75 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-75 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-75 {background:#0c1116;border:0;}
+.property-card.mk-l-nx-75 ::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg,var(--gold),var(--primary));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
+.property-card.mk-l-nx-75 .property-content{padding:14px 16px;color:#e8edf2;}
+.property-card.mk-l-nx-75 .property-title{color:#fff!important;}
+.property-card.mk-l-nx-75 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-76 — برچسب چرخان نخست */
+.property-card.mk-l-nx-76{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-76 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-76 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-76 .property-image{height:auto!important;aspect-ratio:16 / 9;}
+.property-card.mk-l-nx-76 .property-price{display:inline-block;transform:rotate(-4deg);background:var(--gold);color:#111!important;padding:6px 12px;border-radius:10px;box-shadow:0 6px 14px rgba(0,0,0,.25);}
+.property-card.mk-l-nx-76 .property-content{padding:10px 12px;}
+.property-card.mk-l-nx-76 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-77 — برچسب چرخان دوم */
+.property-card.mk-l-nx-77{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-77 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-77 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-77 .property-image{height:auto!important;aspect-ratio:4 / 3;}
+.property-card.mk-l-nx-77 .property-price{display:inline-block;transform:rotate(-4deg);background:var(--gold);color:#111!important;padding:6px 12px;border-radius:10px;box-shadow:0 6px 14px rgba(0,0,0,.25);}
+.property-card.mk-l-nx-77 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-77 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+/* nx-78 — برچسب چرخان سوم */
+.property-card.mk-l-nx-78{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-78 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-78 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-78 .property-image{height:auto!important;aspect-ratio:1 / 1;}
+.property-card.mk-l-nx-78 .property-price{display:inline-block;transform:rotate(-4deg);background:var(--gold);color:#111!important;padding:6px 12px;border-radius:10px;box-shadow:0 6px 14px rgba(0,0,0,.25);}
+.property-card.mk-l-nx-78 .property-content{padding:20px 22px;}
+.property-card.mk-l-nx-78 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-78 .property-feature,.property-card.mk-l-nx-78 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-79 — برچسب چرخان چهارم */
+.property-card.mk-l-nx-79{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-79 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-79 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-79 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-79 .property-price{display:inline-block;transform:rotate(-4deg);background:var(--gold);color:#111!important;padding:6px 12px;border-radius:10px;box-shadow:0 6px 14px rgba(0,0,0,.25);}
+.property-card.mk-l-nx-79 .property-content{padding:10px 12px;}
+.property-card.mk-l-nx-79 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-80 — برچسب چرخان پنجم */
+.property-card.mk-l-nx-80{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-80 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-80 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-80 .property-image{height:auto!important;aspect-ratio:21 / 9;}
+.property-card.mk-l-nx-80 .property-price{display:inline-block;transform:rotate(-4deg);background:var(--gold);color:#111!important;padding:6px 12px;border-radius:10px;box-shadow:0 6px 14px rgba(0,0,0,.25);}
+.property-card.mk-l-nx-80 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-80 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-81 — پانوراما نخست */
+.property-card.mk-l-nx-81{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-81 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-81 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-81 .property-image{height:auto!important;aspect-ratio:21 / 7;}
+.property-card.mk-l-nx-81 .property-features{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.property-card.mk-l-nx-81 .property-content{padding:10px 12px;}
+/* nx-82 — پانوراما دوم */
+.property-card.mk-l-nx-82{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-82 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-82 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-82 .property-image{height:auto!important;aspect-ratio:21 / 7;}
+.property-card.mk-l-nx-82 .property-features{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.property-card.mk-l-nx-82 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-82 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-82 .property-feature,.property-card.mk-l-nx-82 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-83 — پانوراما سوم */
+.property-card.mk-l-nx-83{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-83 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-83 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-83 .property-image{height:auto!important;aspect-ratio:21 / 7;}
+.property-card.mk-l-nx-83 .property-features{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.property-card.mk-l-nx-83 .property-content{padding:20px 22px;}
+.property-card.mk-l-nx-83 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-83 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-84 — پانوراما چهارم */
+.property-card.mk-l-nx-84{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-84 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-84 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-84 .property-image{height:auto!important;aspect-ratio:21 / 7;}
+.property-card.mk-l-nx-84 .property-features{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.property-card.mk-l-nx-84 .property-content{padding:10px 12px;}
+.property-card.mk-l-nx-84 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-85 — پانوراما پنجم */
+.property-card.mk-l-nx-85{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-85 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-85 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-85 .property-image{height:auto!important;aspect-ratio:21 / 7;}
+.property-card.mk-l-nx-85 .property-features{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.property-card.mk-l-nx-85 .property-content{padding:14px 16px;}
+/* nx-86 — پشته‌ای نخست */
+.property-card.mk-l-nx-86{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-86 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-86 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-86 {box-shadow:6px 6px 0 -1px var(--surface),6px 6px 0 0 var(--border),12px 12px 0 -1px var(--surface),12px 12px 0 0 var(--border);margin:0 0 12px;}
+.property-card.mk-l-nx-86 .property-image{height:auto!important;aspect-ratio:1 / 1;}
+.property-card.mk-l-nx-86 .property-content{padding:10px 12px;}
+.property-card.mk-l-nx-86 .property-feature,.property-card.mk-l-nx-86 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-87 — پشته‌ای دوم */
+.property-card.mk-l-nx-87{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-87 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-87 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-87 {box-shadow:6px 6px 0 -1px var(--surface),6px 6px 0 0 var(--border),12px 12px 0 -1px var(--surface),12px 12px 0 0 var(--border);margin:0 0 12px;}
+.property-card.mk-l-nx-87 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-87 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-87 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-87 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-88 — پشته‌ای سوم */
+.property-card.mk-l-nx-88{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-88 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-88 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-88 {box-shadow:6px 6px 0 -1px var(--surface),6px 6px 0 0 var(--border),12px 12px 0 -1px var(--surface),12px 12px 0 0 var(--border);margin:0 0 12px;}
+.property-card.mk-l-nx-88 .property-image{height:auto!important;aspect-ratio:21 / 9;}
+.property-card.mk-l-nx-88 .property-content{padding:20px 22px;}
+.property-card.mk-l-nx-88 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-88 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-89 — پشته‌ای چهارم */
+.property-card.mk-l-nx-89{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-89 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-89 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-89 {box-shadow:6px 6px 0 -1px var(--surface),6px 6px 0 0 var(--border),12px 12px 0 -1px var(--surface),12px 12px 0 0 var(--border);margin:0 0 12px;}
+.property-card.mk-l-nx-89 .property-image{height:auto!important;aspect-ratio:16 / 9;}
+.property-card.mk-l-nx-89 .property-content{padding:10px 12px;}
+/* nx-90 — پشته‌ای پنجم */
+.property-card.mk-l-nx-90{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-90 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-90 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-90 {box-shadow:6px 6px 0 -1px var(--surface),6px 6px 0 0 var(--border),12px 12px 0 -1px var(--surface),12px 12px 0 0 var(--border);margin:0 0 12px;}
+.property-card.mk-l-nx-90 .property-image{height:auto!important;aspect-ratio:4 / 3;}
+.property-card.mk-l-nx-90 .property-content{padding:14px 16px;}
+.property-card.mk-l-nx-90 .property-feature,.property-card.mk-l-nx-90 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-91 — کپسولی نخست */
+.property-card.mk-l-nx-91{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-91 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-91 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-91 {flex-direction:row;align-items:center;}
+.property-card.mk-l-nx-91 .property-image{flex:0 0 34%;height:auto!important;aspect-ratio:1;border-radius:999px;margin:10px;}
+.property-card.mk-l-nx-91 .property-content{padding:10px 12px;flex:1;}
+.property-card.mk-l-nx-91 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+.property-card.mk-l-nx-91 .property-content{min-width:0;}
+.property-card.mk-l-nx-91 .property-title-row{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-91 .property-price{font-size:clamp(12px,1.05vw,15px);white-space:normal;padding-inline:8px;max-width:100%;}
+/* nx-92 — کپسولی دوم */
+.property-card.mk-l-nx-92{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-92 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-92 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-92 {flex-direction:row;align-items:center;}
+.property-card.mk-l-nx-92 .property-image{flex:0 0 34%;height:auto!important;aspect-ratio:1;border-radius:999px;margin:10px;}
+.property-card.mk-l-nx-92 .property-content{padding:14px 16px;flex:1;}
+.property-card.mk-l-nx-92 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+.property-card.mk-l-nx-92 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-92 .property-content{min-width:0;}
+.property-card.mk-l-nx-92 .property-title-row{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-92 .property-price{font-size:clamp(12px,1.05vw,15px);white-space:normal;padding-inline:8px;max-width:100%;}
+/* nx-93 — کپسولی سوم */
+.property-card.mk-l-nx-93{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-93 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-93 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-93 {flex-direction:row;align-items:center;}
+.property-card.mk-l-nx-93 .property-image{flex:0 0 34%;height:auto!important;aspect-ratio:1;border-radius:999px;margin:10px;}
+.property-card.mk-l-nx-93 .property-content{padding:20px 22px;flex:1;}
+.property-card.mk-l-nx-93 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-93 .property-content{min-width:0;}
+.property-card.mk-l-nx-93 .property-title-row{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-93 .property-price{font-size:clamp(12px,1.05vw,15px);white-space:normal;padding-inline:8px;max-width:100%;}
+/* nx-94 — کپسولی چهارم */
+.property-card.mk-l-nx-94{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-94 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-94 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-94 {flex-direction:row;align-items:center;}
+.property-card.mk-l-nx-94 .property-image{flex:0 0 34%;height:auto!important;aspect-ratio:1;border-radius:999px;margin:10px;}
+.property-card.mk-l-nx-94 .property-content{padding:10px 12px;flex:1;}
+.property-card.mk-l-nx-94 .property-feature,.property-card.mk-l-nx-94 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+.property-card.mk-l-nx-94 .property-content{min-width:0;}
+.property-card.mk-l-nx-94 .property-title-row{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-94 .property-price{font-size:clamp(12px,1.05vw,15px);white-space:normal;padding-inline:8px;max-width:100%;}
+/* nx-95 — کپسولی پنجم */
+.property-card.mk-l-nx-95{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-95 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-95 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-95 {flex-direction:row;align-items:center;}
+.property-card.mk-l-nx-95 .property-image{flex:0 0 34%;height:auto!important;aspect-ratio:1;border-radius:999px;margin:10px;}
+.property-card.mk-l-nx-95 .property-content{padding:14px 16px;flex:1;}
+.property-card.mk-l-nx-95 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+.property-card.mk-l-nx-95 .property-content{min-width:0;}
+.property-card.mk-l-nx-95 .property-title-row{flex-direction:column;align-items:flex-start;gap:4px;}
+.property-card.mk-l-nx-95 .property-price{font-size:clamp(12px,1.05vw,15px);white-space:normal;padding-inline:8px;max-width:100%;}
+/* nx-96 — خط بالایی نخست */
+.property-card.mk-l-nx-96{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-96 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-96 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-96 .property-image{height:auto!important;aspect-ratio:21 / 9;}
+.property-card.mk-l-nx-96 .property-content{border-top:4px solid var(--gold);padding:10px 12px;}
+.property-card.mk-l-nx-96 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}
+/* nx-97 — خط بالایی دوم */
+.property-card.mk-l-nx-97{border-radius:24px;flex-direction:column;}
+.property-card.mk-l-nx-97 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-97 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-97 .property-image{height:auto!important;aspect-ratio:16 / 9;}
+.property-card.mk-l-nx-97 .property-content{border-top:4px solid var(--gold);padding:14px 16px;}
+.property-card.mk-l-nx-97 .property-price{display:inline-block;background:color-mix(in srgb,var(--gold) 18%,transparent);border:1px solid var(--gold);border-radius:999px;padding:4px 14px;}
+/* nx-98 — خط بالایی سوم */
+.property-card.mk-l-nx-98{border-radius:var(--radius-md);flex-direction:column;}
+.property-card.mk-l-nx-98 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-98 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-98 .property-image{height:auto!important;aspect-ratio:4 / 3;}
+.property-card.mk-l-nx-98 .property-content{border-top:4px solid var(--gold);padding:20px 22px;}
+.property-card.mk-l-nx-98 .property-price{font-size:clamp(17px,1.6vw,22px);font-weight:900;overflow-wrap:anywhere;max-width:100%;}
+.property-card.mk-l-nx-98 .property-feature,.property-card.mk-l-nx-98 .property-badge{background:transparent!important;border:0!important;padding:0 6px 0 0!important;}
+/* nx-99 — خط بالایی چهارم */
+.property-card.mk-l-nx-99{border-radius:8px;flex-direction:column;}
+.property-card.mk-l-nx-99 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-99 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-99 .property-image{height:auto!important;aspect-ratio:1 / 1;}
+.property-card.mk-l-nx-99 .property-content{border-top:4px solid var(--gold);padding:10px 12px;}
+.property-card.mk-l-nx-99 .property-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;}
+/* nx-100 — خط بالایی پنجم */
+.property-card.mk-l-nx-100{border-radius:16px;flex-direction:column;}
+.property-card.mk-l-nx-100 .property-date{position:static;margin-top:6px;}
+.property-card.mk-l-nx-100 .property-title-row{flex-wrap:wrap;}
+.property-card.mk-l-nx-100 .property-image{height:auto!important;aspect-ratio:3 / 4;}
+.property-card.mk-l-nx-100 .property-content{border-top:4px solid var(--gold);padding:14px 16px;}
+.property-card.mk-l-nx-100 .property-features{flex-direction:column;align-items:flex-start;gap:4px;}

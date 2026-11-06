@@ -1,0 +1,7 @@
+<?php
+session_start();header('Content-Type: application/json; charset=utf-8');require_once __DIR__.'/config.php';require_once __DIR__.'/security-lib.php';if(empty($_SESSION['is_admin'])){http_response_code(403);echo json_encode(['success'=>false,'message'=>'دسترسی غیرمجاز'],JSON_UNESCAPED_UNICODE);exit;} melkinoCsrfCheck(); $p=json_decode(file_get_contents('php://input'),true);$cur=(string)($p['current_password']??'');$new=(string)($p['new_password']??'');if(strlen($new)<8){http_response_code(422);echo json_encode(['success'=>false,'message'=>'رمز جدید باید حداقل ۸ کاراکتر باشد.'],JSON_UNESCAPED_UNICODE);exit;} $st=$pdo->prepare('SELECT id,password_hash FROM admins WHERE username=? LIMIT 1');$st->execute(['admin']);$a=$st->fetch(PDO::FETCH_ASSOC);if(!$a||!password_verify($cur,(string)$a['password_hash'])){http_response_code(422);echo json_encode(['success'=>false,'message'=>'رمز فعلی صحیح نیست.'],JSON_UNESCAPED_UNICODE);exit;} $u=$pdo->prepare('UPDATE admins SET password_hash=?,updated_at=NOW() WHERE id=?');$u->execute([password_hash($new,PASSWORD_DEFAULT),(int)$a['id']]);
+melkinoAudit('admin.password_change','admin',(int)$a['id']);
+/* پس از تغییر رمز، شناسهٔ نشست نو می‌شود تا نشست‌های قدیمیِ سرقت‌شده
+   با همان کوکی قابل استفاده نمانند. */
+if (session_status() === PHP_SESSION_ACTIVE) { @session_regenerate_id(true); }
+echo json_encode(['success'=>true,'message'=>'رمز با موفقیت ذخیره شد.'],JSON_UNESCAPED_UNICODE);
