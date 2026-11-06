@@ -1,0 +1,444 @@
+/* استودیو طراحی ملکینو — UI ادیتور */
+#tab-studio.active { padding: 0 !important; background: transparent; }
+.ds-app {
+    --ds-ink: #123232;
+    --ds-muted: #6b7c79;
+    --ds-line: rgba(6,78,78,.10);
+    --ds-gold: #d4af37;
+    --ds-teal: #064e4e;
+    font-family: inherit;
+    color: #123232;
+    min-height: 78vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background: #f6f4ee;
+    border: 1px solid var(--ds-line);
+    border-radius: 22px;
+    overflow: visible;
+}
+.ds-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, #052d2d 0%, #064e4e 62%, #0b5d5b 100%);
+    color: #fff;
+}
+.ds-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.ds-bar-actions { justify-content: flex-start; }
+.ds-bar-title { font-weight: 900; font-size: 15px; letter-spacing: -.2px; }
+.ds-bar-title small { display: block; font-size: 11px; font-weight: 700; opacity: .7; }
+.ds-bar-spacer { flex: 1; }
+.ds-status {
+    font-size: 11px;
+    font-weight: 800;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.12);
+}
+.ds-status.dirty { background: rgba(212,175,55,.18); color: #f4dc7a; }
+.ds-status.ok { background: rgba(34,197,94,.18); color: #bbf7d0; }
+.ds-btn,
+#dsApp .ds-btn {
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 8px 12px;
+    background: rgba(255,255,255,.14);
+    color: #fff !important;
+    white-space: nowrap;
+    min-height: 36px;
+}
+.ds-btn:hover { background: rgba(255,255,255,.22); }
+.ds-btn.gold,
+#dsApp .ds-btn.gold { background: linear-gradient(135deg, #f4dc7a, #c79f27); color: #163434 !important; }
+.ds-btn.ghost { background: transparent; border: 1px solid rgba(255,255,255,.18); }
+.ds-select,
+#dsApp .ds-select {
+    background: rgba(255,255,255,.14);
+    color: #fff !important;
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 10px;
+    padding: 7px 10px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    min-height: 36px;
+}
+.ds-select option { color: #123232; background: #fff; }
+.ds-body {
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr) 300px;
+    min-height: 0;
+}
+.ds-nav, .ds-side {
+    background: #fff;
+    border-inline-end: 1px solid var(--ds-line);
+    overflow: auto;
+    padding: 12px;
+}
+.ds-side { border-inline-end: 0; border-inline-start: 1px solid var(--ds-line); }
+.ds-nav button,
+#dsApp .ds-nav button {
+    width: 100%;
+    text-align: right;
+    border: 0;
+    background: transparent;
+    padding: 9px 10px;
+    border-radius: 12px;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 12px;
+    color: #123232 !important;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+.ds-nav button.is-on,
+#dsApp .ds-nav button.is-on { background: #f3eee0; color: #064e4e !important; }
+.ds-stage {
+    min-width: 0;
+    padding: 16px;
+    overflow: auto;
+    background:
+        radial-gradient(circle at 100% 0%, rgba(212,175,55,.08), transparent 28%),
+        linear-gradient(180deg, #f8f6f0, #f3f1ea);
+}
+.ds-stage-tools {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    align-items: center;
+    color: #123232;
+}
+.ds-chip,
+#dsApp button.ds-chip,
+#tab-studio .ds-chip {
+    border: 1px solid #d5e0dc !important;
+    background: #fff !important;
+    color: #123232 !important;
+    border-radius: 999px !important;
+    padding: 7px 12px !important;
+    font-size: 12px !important;
+    font-weight: 800 !important;
+    line-height: 1.4 !important;
+    min-height: 34px !important;
+    height: auto !important;
+    width: auto !important;
+    cursor: pointer;
+    font-family: inherit !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-indent: 0 !important;
+    opacity: 1 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+.ds-chip.is-on,
+#dsApp button.ds-chip.is-on {
+    border-color: #d4af37 !important;
+    background: #fff4cc !important;
+    color: #064e4e !important;
+}
+.ds-browser {
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid var(--ds-line);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(6,78,78,.08);
+    max-width: 100%;
+    transition: width .25s ease;
+}
+.ds-browser[data-device="tablet"] { width: 780px; }
+.ds-browser[data-device="mobile"] { width: 390px; }
+.ds-chrome {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: #f4f1ea;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ds-muted);
+    border-bottom: 1px solid var(--ds-line);
+}
+.ds-chrome-dot { width: 8px; height: 8px; border-radius: 50%; background: #d4af37; }
+.ds-page { padding: 12px; background: var(--bg, #fafaf7); min-height: 420px; }
+.ds-real-frame {
+    width: 100%;
+    overflow: auto;
+    background: rgba(128,128,128,.08);
+    border-radius: 14px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.ds-frame {
+    display: block;
+    width: 390px;
+    height: 720px;
+    max-width: 100%;
+    border: 1px solid #d5ddd9;
+    border-radius: 12px;
+    background: #fff;
+}
+.ds-page[data-theme="dark"] { background: #0b1717; }
+.ds-hero {
+    padding: 18px 16px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #064e4e, #0f766e);
+    color: #fff;
+    margin-bottom: 14px;
+}
+.ds-hero strong { display: block; font-size: 18px; }
+.ds-hero span { font-size: 12px; opacity: .8; }
+.ds-now-layout {
+    font-size: 12px;
+    font-weight: 800;
+    color: #123232;
+    margin: 0 0 12px;
+    padding: 8px 12px;
+    background: #fff8e6;
+    border: 1px solid #e6d59a;
+    border-radius: 12px;
+}
+.ds-preview-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 420px;
+    margin: 0 auto;
+}
+.ds-preview-list:has(.property-card:nth-child(2)) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: none;
+}
+.ds-browser[data-device="mobile"] .ds-preview-list { grid-template-columns: 1fr; }
+.ds-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+    gap: 8px;
+    margin-bottom: 12px;
+}
+.ds-g-card {
+    border: 1px solid var(--ds-line);
+    border-radius: 14px;
+    background: #fff;
+    padding: 8px;
+    cursor: pointer;
+    text-align: right;
+    font-family: inherit;
+}
+.ds-g-card.is-on { border-color: var(--ds-gold); box-shadow: 0 0 0 2px rgba(212,175,55,.28); }
+.ds-g-card strong { display: block; font-size: 11px; margin-top: 6px; }
+.ds-g-card small { display: block; font-size: 11px; color: var(--ds-muted); }
+.ds-thumb { height: 72px; border-radius: 10px; overflow: hidden; background: #eef3f1; position: relative; }
+.ds-thumb b { display: block; height: 38px; background: linear-gradient(135deg, #8ecac4, #d4af37); }
+.ds-thumb i { display: block; height: 5px; width: 70%; background: #c5d4d1; border-radius: 99px; margin: 7px 8px 0; }
+.ds-thumb i.s { width: 40%; }
+.ds-thumb.overlay b { position: absolute; inset: 0; height: auto; }
+.ds-thumb.split { display: grid; grid-template-columns: 1fr 1fr; }
+.ds-thumb.split b { height: 100%; }
+.ds-field { margin-bottom: 12px; }
+.ds-field label { display: block; font-size: 11px; font-weight: 800; margin-bottom: 6px; }
+.ds-field input[type="range"] { width: 100%; }
+.ds-field input[type="text"], .ds-field input[type="number"], .ds-field select, .ds-search {
+    width: 100%;
+    border: 1px solid var(--ds-line);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font-family: inherit;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+.ds-row { display: flex; gap: 8px; align-items: center; justify-content: space-between; }
+.ds-toggle { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12px; font-weight: 800; margin-bottom: 8px; }
+.ds-help { font-size: 11px; color: var(--ds-muted); line-height: 1.7; }
+.ds-warn { font-size: 11px; color: #92400e; background: #fff7ed; border: 1px solid #fed7aa; padding: 8px 10px; border-radius: 10px; margin: 8px 0; }
+.ds-adv { display: none; margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--ds-line); }
+.ds-adv.open { display: block; }
+.ds-layer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid var(--ds-line);
+    border-radius: 10px;
+    margin-bottom: 6px;
+    background: #fafaf7;
+    cursor: grab;
+    font-size: 12px;
+    font-weight: 800;
+}
+.ds-layer.is-on { border-color: var(--ds-gold); }
+.ds-presets { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.ds-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(6,20,20,.45);
+    z-index: 12000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+}
+.ds-modal.open { display: flex; }
+.ds-modal-card {
+    width: min(560px, 100%);
+    background: #fff;
+    border-radius: 18px;
+    padding: 18px;
+    max-height: 90vh;
+    overflow: auto;
+}
+.ds-compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.ds-ba { position: relative; overflow: hidden; }
+.ds-ba-after { position: absolute; inset: 0; width: 50%; overflow: hidden; border-inline-end: 2px solid #d4af37; }
+.ds-drawer-btn { display: none; }
+.ds-drawer-head { display: none; }
+.ds-scrim {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(6, 20, 20, .45);
+    z-index: 10950;
+    -webkit-tap-highlight-color: transparent;
+}
+.ds-scrim.is-on { display: block !important; }
+.ds-drawer-close {
+    border: 0;
+    background: #123232;
+    color: #fff !important;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-height: 40px;
+}
+@media (max-width: 1100px) {
+    .ds-body { grid-template-columns: 1fr; }
+    .ds-nav, .ds-side {
+        position: fixed;
+        z-index: 11000;
+        top: 0;
+        bottom: 0;
+        width: min(340px, 82vw);
+        max-width: 92vw;
+        transform: translateX(110%);
+        transition: transform .2s ease;
+        box-shadow: 0 20px 50px rgba(0,0,0,.28);
+        padding-top: calc(10px + env(safe-area-inset-top, 0px));
+        padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .ds-nav { right: 0; }
+    .ds-side { left: 0; right: auto; transform: translateX(-110%); }
+    .ds-nav.open, .ds-side.open { transform: translateX(0); }
+    .ds-drawer-btn { display: inline-flex; }
+    .ds-drawer-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        margin: 0 0 12px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--ds-line);
+        position: sticky;
+        top: 0;
+        background: #fff;
+        z-index: 2;
+    }
+    .ds-drawer-head strong { font-size: 14px; color: #123232; }
+}
+
+/* ===== انتخاب شکل مارکر نقشه ===== */
+.ds-marker-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(74px,1fr));gap:8px;margin:8px 0 12px}
+.ds-marker-opt{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 4px;border:1px solid rgba(6,78,78,.18);
+  border-radius:12px;background:#fff;cursor:pointer;font-family:inherit;transition:.18s}
+.ds-marker-opt:hover{border-color:var(--gold,#D4AF37);transform:translateY(-2px)}
+.ds-marker-opt.is-on{border-color:var(--gold,#D4AF37);box-shadow:0 0 0 2px rgba(212,175,55,.25);background:#fffdf5}
+.ds-marker-ico{width:30px;height:40px;display:block}
+.ds-marker-ico svg{width:100%;height:100%;display:block}
+.ds-marker-opt small{font-size:11px;color:#334;line-height:1.4;text-align:center}
+
+/* =========================================================
+   رفع نادیدنی بودن متن‌ها (پنل ادمین رنگ متن روشن دارد و
+   داخل کارت سفید استودیو ارث می‌رسید)
+   ========================================================= */
+.ds-app, .ds-modal, .ds-modal-card { color: #14302f; }
+.ds-modal-card { color: #14302f !important; background: #fff !important; }
+.ds-modal-card h3,
+.ds-modal-card h4,
+.ds-modal-card p,
+.ds-modal-card strong,
+.ds-modal-card label,
+.ds-modal-card small,
+.ds-modal-card div { color: #14302f; }
+.ds-modal-card h3 { margin: 4px 0 10px; font-size: 16px; font-weight: 900; color: #064e4e; }
+.ds-modal-card .ds-help { color: #5b6b69 !important; font-size: 12px; }
+.ds-modal-card .ds-chip { background: #fff; color: #0f3b3b; border: 1px solid rgba(6,78,78,.25); }
+.ds-modal-card .ds-chip.is-on { background: #064e4e; color: #fff; border-color: #064e4e; }
+.ds-modal-card .ds-presets { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 14px; }
+.ds-modal-card .ds-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.ds-side, .ds-side * , .ds-nav { color: #14302f; }
+.ds-side .ds-help { color: #5b6b69; }
+.ds-field label { color: #14302f; font-weight: 700; }
+
+/* ===== گالری مدل‌های کارت نقشه ===== */
+.ds-skin-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 9px; margin: 8px 0 14px; }
+.ds-skin-opt { display: flex; flex-direction: column; gap: 4px; padding: 7px; border: 1px solid rgba(6,78,78,.18);
+  border-radius: 13px; background: #fff; cursor: pointer; font-family: inherit; text-align: right; transition: .18s; }
+.ds-skin-opt:hover { border-color: #d4af37; transform: translateY(-2px); }
+.ds-skin-opt.is-on { border-color: #d4af37; box-shadow: 0 0 0 2px rgba(212,175,55,.28); }
+.ds-skin-opt strong { font-size: 12px; color: #14302f; }
+.ds-skin-opt small { font-size: 11px; color: #6b7c7a; line-height: 1.5; }
+.ds-skin-pv { display: block; position: relative; height: 62px; border-radius: 10px; border: 1px solid;
+  padding: 6px; overflow: hidden; }
+.ds-skin-img { position: absolute; top: 6px; right: 6px; width: 26px; height: 26px; border-radius: 7px;
+  background: rgba(255,255,255,.35); border: 1px solid currentColor; opacity: .7; }
+.ds-skin-line { position: absolute; right: 38px; top: 10px; height: 5px; width: 46px; border-radius: 3px;
+  background: currentColor; opacity: .75; }
+.ds-skin-line.short { top: 20px; width: 28px; opacity: .45; }
+.ds-skin-price { position: absolute; bottom: 7px; right: 7px; font-size: 11px; font-weight: 900; font-style: normal; }
+
+/* ===== استیج پیش‌نمایش نقشه ===== */
+.ds-map-stage { position: relative; margin: 0 auto; max-width: 100%; border-radius: 16px; overflow: hidden;
+  border: 1px solid rgba(6,78,78,.18); background: #dfe9e4; min-height: 420px; }
+.ds-map-canvas { position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,.55) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.55) 1px, transparent 1px),
+    linear-gradient(140deg, #e8f0ea, #d5e3dd 60%, #cfe0e4);
+  background-size: 34px 34px, 34px 34px, 100% 100%; }
+.ds-map-markers { position: absolute; top: 26%; left: 0; right: 0; display: flex; justify-content: center; gap: 46px; }
+.ds-map-marker { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.ds-map-marker em { font-style: normal; font-size: 11px; font-weight: 800; color: #14302f;
+  background: rgba(255,255,255,.85); border-radius: 999px; padding: 2px 8px; }
+/* کارت داخل استیج نباید fixed شود (در صفحهٔ واقعی fixed است) */
+.ds-map-sheet { position: absolute !important; inset: auto 12px 12px 12px; max-height: none !important; z-index: 3; }
+.ds-map-stage .mk-map-sheet[data-skin="poster"] { padding: 0 0 12px; }
+
+/* Real renderer thumbnails, isolated from admin CSS. No schematic stand-ins. */
+.ds-thumb.ds-thumb-real{display:block!important;position:relative;min-height:120px;height:230px;overflow:hidden;background:var(--bg,#fafaf7);border-radius:9px;pointer-events:none}
+.ds-thumb-real iframe{position:absolute;top:0;right:0;width:390px;height:600px;max-width:none;border:0;transform:scale(.35);transform-origin:top right;pointer-events:none;background:transparent}
+.ds-thumb.ds-thumb-real:before,.ds-thumb.ds-thumb-real:after{display:none!important}
+.ds-g-card{align-self:start}
+
+/* Keep the emulated viewport real; scale its display, never squeeze its CSS width. */
+.ds-real-frame{position:relative;display:block;overflow:hidden;min-height:180px;box-sizing:border-box}
+.ds-frame{position:absolute;top:10px;right:10px;max-width:none;flex-shrink:0;transform-origin:top right}
+
+.ds-frame{box-sizing:content-box}

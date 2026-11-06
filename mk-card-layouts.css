@@ -1,0 +1,236 @@
+/* ۲۰ مدل کارت استودیو طراحی ملکینو — ترکیب متفاوت، نه فقط رنگ */
+
+.property-card.mk-l-classic.mk-l-photo-top .property-image {
+    aspect-ratio: 16 / 10;
+    height: auto;
+    min-height: 170px;
+}
+
+.property-card.mk-l-luxury {
+    border: 1px solid rgba(212, 175, 55, .55) !important;
+    box-shadow: 0 14px 34px rgba(212, 175, 55, .12);
+    background: linear-gradient(180deg, #fff, #fbf8ef);
+}
+.property-card.mk-l-luxury .property-image {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    min-height: 190px;
+}
+.property-card.mk-l-luxury .property-badge.gold,
+.property-card.mk-l-luxury .property-price {
+    letter-spacing: .02em;
+}
+.property-card.mk-l-luxury .property-content { padding: 14px 16px 16px; }
+
+.property-card.mk-l-modern {
+    border-radius: 10px;
+    box-shadow: none;
+    border-color: #ecece8;
+}
+.property-card.mk-l-modern .property-image { aspect-ratio: 3 / 2; height: auto; min-height: 160px; }
+.property-card.mk-l-modern .property-title { font-weight: 650; font-size: 13px; }
+.property-card.mk-l-modern .property-price {
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--primary);
+    max-width: none;
+}
+.property-card.mk-l-modern .property-features { gap: 8px; border: 0; padding-top: 4px; }
+.property-card.mk-l-modern .property-feature { background: transparent; padding: 0; }
+
+.property-card.mk-l-minimal { padding: 8px; background: #fff; box-shadow: none; border: 0; }
+.property-card.mk-l-minimal .property-image { border-radius: 18px; aspect-ratio: 16 / 10; height: auto; }
+.property-card.mk-l-minimal .property-features,
+.property-card.mk-l-minimal .property-amen-row,
+.property-card.mk-l-minimal .property-code { display: none; }
+.property-card.mk-l-minimal .property-content { padding: 16px 8px 8px; }
+.property-card.mk-l-minimal .property-title { font-weight: 600; }
+
+.property-card.mk-l-horizontal.mk-l-photo-left .property-image,
+#mkHomeAdsList .property-card.mk-l-horizontal .property-image {
+    width: 38% !important;
+    max-width: 38% !important;
+    flex-basis: 38% !important;
+}
+.property-card.mk-l-horizontal.mk-l-photo-left .property-content,
+#mkHomeAdsList .property-card.mk-l-horizontal .property-content {
+    width: 62% !important;
+    max-width: 62% !important;
+}
+
+.property-card.mk-l-split.mk-l-photo-left .property-image,
+#mkHomeAdsList .property-card.mk-l-split .property-image {
+    width: 50% !important;
+    max-width: 50% !important;
+    flex-basis: 50% !important;
+}
+.property-card.mk-l-split.mk-l-photo-left .property-content,
+#mkHomeAdsList .property-card.mk-l-split .property-content {
+    width: 50% !important;
+    max-width: 50% !important;
+}
+
+.property-card.mk-l-overlay.mk-l-photo-full { min-height: 380px; }
+
+.property-card.mk-l-bottom-overlay { overflow: hidden; }
+.property-card.mk-l-bottom-overlay .property-image {
+    aspect-ratio: 16 / 10;
+    height: auto;
+    min-height: 200px;
+}
+.property-card.mk-l-bottom-overlay .property-content {
+    margin-top: -52px;
+    position: relative;
+    z-index: 3;
+    background: linear-gradient(180deg, transparent, var(--surface) 42%);
+    padding-top: 36px;
+}
+
+.property-card.mk-l-magazine {
+    background: #0b2a2a;
+}
+.property-card.mk-l-magazine .property-title { font-size: 18px; font-weight: 900; color: #fff; }
+
+.property-card.mk-l-floating.mk-l-photo-float { padding: 12px; background: #f7f6f1; }
+.property-card.mk-l-floating .property-image { box-shadow: 0 10px 24px rgba(6,78,78,.16); }
+
+.property-card.mk-l-glass.mk-l-photo-full { min-height: 360px; }
+.property-card.mk-l-glass .property-content {
+    margin: 14px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.18) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,.28);
+    color: #fff;
+}
+
+.property-card.mk-l-price-focus .property-image { height: 120px; flex-basis: 120px; min-height: 120px; }
+.property-card.mk-l-price-focus .property-price {
+    order: -1;
+    font-size: 22px;
+    max-width: 100%;
+    text-align: right;
+    width: 100%;
+}
+.property-card.mk-l-price-focus .property-title-row { flex-direction: column; }
+.property-card.mk-l-price-focus .property-features { display: none; }
+
+.property-card.mk-l-image-focus .property-image {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    min-height: 240px;
+    flex: 1 1 auto;
+}
+.property-card.mk-l-image-focus .property-content { padding: 8px 12px 12px; }
+.property-card.mk-l-image-focus .property-amen-row { display: none; }
+
+.property-card.mk-l-compact { min-height: 0; }
+.property-card.mk-l-compact .property-image { height: 118px; flex-basis: 118px; min-height: 118px; }
+.property-card.mk-l-compact .property-content { padding: 8px 10px 10px; }
+.property-card.mk-l-compact .property-title { font-size: 12px; -webkit-line-clamp: 1; }
+.property-card.mk-l-compact .property-amen-row,
+.property-card.mk-l-compact .property-code { display: none; }
+.property-card.mk-l-compact .property-features { margin-top: 6px; padding-top: 6px; }
+
+.property-card.mk-l-wide.mk-l-photo-left { min-height: 200px; }
+.property-card.mk-l-wide.mk-l-photo-left .property-image,
+#mkHomeAdsList .property-card.mk-l-wide .property-image {
+    width: 32% !important;
+    max-width: 32% !important;
+    flex-basis: 32% !important;
+}
+.property-card.mk-l-wide.mk-l-photo-left .property-content,
+#mkHomeAdsList .property-card.mk-l-wide .property-content {
+    width: 68% !important;
+    max-width: 68% !important;
+}
+
+.property-card.mk-l-vertical .property-image {
+    aspect-ratio: 4 / 5;
+    height: auto;
+    min-height: 220px;
+}
+.property-card.mk-l-vertical .property-badge.gold { font-size: 11px; }
+
+.property-card.mk-l-vip {
+    background: #0c2424;
+    color: #fff;
+    border: 1px solid #d4af37 !important;
+    box-shadow: 0 0 0 1px rgba(212,175,55,.28), 0 16px 36px rgba(212,175,55,.16);
+}
+.property-card.mk-l-vip .property-title,
+.property-card.mk-l-vip .property-location,
+.property-card.mk-l-vip .property-code { color: #fff; }
+.property-card.mk-l-vip .property-price {
+    background: #d4af37;
+    color: #163434;
+    border-radius: 999px;
+    padding: 4px 10px;
+    max-width: 100%;
+}
+.property-card.mk-l-vip .property-feature { background: rgba(255,255,255,.08); color: #e8f4f1; }
+
+.property-card.mk-l-featured { position: relative; }
+.property-card.mk-l-featured .property-image { aspect-ratio: 16 / 9; height: auto; }
+.property-card.mk-l-featured:before {
+    content: "ویژه";
+    position: absolute;
+    top: 14px;
+    left: -6px;
+    z-index: 5;
+    background: #d4af37;
+    color: #163434;
+    font-size: 11px;
+    font-weight: 900;
+    padding: 4px 12px;
+    border-radius: 0 8px 8px 0;
+}
+.property-card.mk-l-featured .property-detail {
+    background: var(--primary);
+    color: #fff;
+    border: 0;
+}
+
+.property-card.mk-l-dark {
+    background: #102222;
+    color: #e8f4f1;
+    border-color: #294646;
+}
+.property-card.mk-l-dark .property-title,
+.property-card.mk-l-dark .property-location,
+.property-card.mk-l-dark .property-code { color: #f4faf8; }
+.property-card.mk-l-dark .property-price { color: #d4af37; }
+.property-card.mk-l-dark .property-feature { background: #1b3232; color: #cfe0dd; }
+.property-card.mk-l-dark .property-image { aspect-ratio: 16 / 10; height: auto; }
+
+.property-card.mk-l-grid .property-image {
+    aspect-ratio: 1 / 1;
+    height: auto;
+    min-height: 160px;
+}
+.property-card.mk-l-grid .property-content { padding: 8px 10px 10px; }
+.property-card.mk-l-grid .property-title { font-size: 12px; -webkit-line-clamp: 1; }
+.property-card.mk-l-grid .property-amen-row { display: none; }
+
+@media (max-width: 720px) {
+    .property-card.mk-l-horizontal .property-image,
+    .property-card.mk-l-split .property-image,
+    .property-card.mk-l-wide .property-image,
+    #mkHomeAdsList .property-card.mk-l-horizontal .property-image,
+    #mkHomeAdsList .property-card.mk-l-split .property-image,
+    #mkHomeAdsList .property-card.mk-l-wide .property-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex-basis: auto !important;
+    }
+    .property-card.mk-l-horizontal .property-content,
+    .property-card.mk-l-split .property-content,
+    .property-card.mk-l-wide .property-content,
+    #mkHomeAdsList .property-card.mk-l-horizontal .property-content,
+    #mkHomeAdsList .property-card.mk-l-split .property-content,
+    #mkHomeAdsList .property-card.mk-l-wide .property-content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
